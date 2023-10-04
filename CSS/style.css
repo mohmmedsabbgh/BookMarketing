@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,400;1,100&family=Cairo:wght@400;500&family=Roboto:wght@500&display=swap');
+
+* {
+    /* font-family: 'Asap', sans-serif; */
+    font-family: 'Cairo', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+html {
+    background-color:#000000b7;
+    min-width: 100%;
+    direction: rtl;
+
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    padding-left: 30px;
+    border-radius: 8px;
+}
+
+.title {
+    /* margin: 50px auto; */
+    padding-top: 15px;
+    color: black;
+    font-size: 30px;
+}
+
+.title h1 {
+    margin: 0;
+    color: #fff;
+}
+
+.title button {
+    margin-top: -200 px;
+}
+
+.form {
+    position: absolute;
+    left: 200%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    background-color: #000000e2;
+    width: 100%;
+    min-height: 100vh;
+}
+.form.active{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+}
+input {
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    width: 50%;
+}
+
+input::placeholder {
+    font-weight: bold;
+}
+
+input:focus {
+    border: 3px solid #e27d35;
+}
+
+.shelves {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ff5e00a3;
+    border-radius: 8px;
+
+}
+
+.shelves .book-card {
+    background-color: #fff;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.book-image {
+    max-width: 100%;
+
+}
+
+h3,
+h5 {
+    margin: 0;
+    padding-bottom: 7px;
+    text-justify: auto;
+}
+
+.inputs {
+    background-color: white;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+#submit  , #openForm{
+    background-color: #ffd500;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    display: inline-block;
+    padding: 6px 12px;
+    width: 20%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#submit  , #openForm:hover{
+    transition: 0.3s ease-in-out;
+    background-color: #00000099;
+    color: #fff;
+}
